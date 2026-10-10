@@ -1,0 +1,18 @@
+test_clearance_has_no_departures (test_core.EnvironmentTests.test_clearance_has_no_departures) ... ok
+test_conservation_and_delay_identity (test_core.EnvironmentTests.test_conservation_and_delay_identity) ... ok
+test_empty_traffic_has_zero_delay (test_core.EnvironmentTests.test_empty_traffic_has_zero_delay) ... ok
+test_invalid_inputs (test_core.EnvironmentTests.test_invalid_inputs) ... ok
+test_seeded_traffic (test_core.EnvironmentTests.test_seeded_traffic) ... ok
+test_monotonicity_and_explanation (test_core.LearningTests.test_monotonicity_and_explanation) ... ok
+test_policy_gradients_all_variants (test_core.LearningTests.test_policy_gradients_all_variants) ... ok
+test_q_backpropagation (test_core.LearningTests.test_q_backpropagation) ... ok
+test_replay_wrap (test_core.LearningTests.test_replay_wrap) ... ok
+test_terminal_target_no_bootstrap (test_core.LearningTests.test_terminal_target_no_bootstrap) ... ok
+test_training_and_checkpoint_roundtrip (test_core.LearningTests.test_training_and_checkpoint_roundtrip) ... ok
+test_stress_evaluation_is_frozen_and_conserves_vehicles (test_evidence.EvidenceTests.test_stress_evaluation_is_frozen_and_conserves_vehicles) ... ok
+test_unfinished_vehicles_contribute_to_delay (test_evidence.EvidenceTests.test_unfinished_vehicles_contribute_to_delay) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.486s
+
+OK

@@ -1,0 +1,78 @@
+DQN  seed=11 episode= 10 delay= 12.88s
+DQN  seed=11 episode= 20 delay= 11.06s
+DQN  seed=11 episode= 30 delay=  9.80s
+DQN  seed=11 episode= 40 delay=  8.05s
+DQN  seed=11 episode= 50 delay=  8.01s
+DQN  seed=22 episode= 10 delay= 11.49s
+DQN  seed=22 episode= 20 delay= 10.90s
+DQN  seed=22 episode= 30 delay=  9.37s
+DQN  seed=22 episode= 40 delay=  9.97s
+DQN  seed=22 episode= 50 delay=  8.62s
+DQN  seed=33 episode= 10 delay= 11.28s
+DQN  seed=33 episode= 20 delay= 10.75s
+DQN  seed=33 episode= 30 delay= 10.32s
+DQN  seed=33 episode= 40 delay= 10.26s
+DQN  seed=33 episode= 50 delay=  9.40s
+DRQ  seed=11 episode= 10 delay=283.77s
+DRQ  seed=11 episode= 20 delay=317.02s
+DRQ  seed=11 episode= 30 delay=301.99s
+DRQ  seed=11 episode= 40 delay=299.98s
+DRQ  seed=11 episode= 50 delay=369.21s
+DRQ  seed=22 episode= 10 delay=301.72s
+DRQ  seed=22 episode= 20 delay=291.42s
+DRQ  seed=22 episode= 30 delay=349.87s
+DRQ  seed=22 episode= 40 delay=346.44s
+DRQ  seed=22 episode= 50 delay=365.31s
+DRQ  seed=33 episode= 10 delay=275.22s
+DRQ  seed=33 episode= 20 delay=324.57s
+DRQ  seed=33 episode= 30 delay=359.44s
+DRQ  seed=33 episode= 40 delay=346.46s
+DRQ  seed=33 episode= 50 delay=395.90s
+DRSQ seed=11 episode= 10 delay= 12.34s
+DRSQ seed=11 episode= 20 delay= 10.88s
+DRSQ seed=11 episode= 30 delay=  8.81s
+DRSQ seed=11 episode= 40 delay= 10.47s
+DRSQ seed=11 episode= 50 delay=  7.85s
+DRSQ seed=22 episode= 10 delay= 10.71s
+DRSQ seed=22 episode= 20 delay=  9.30s
+DRSQ seed=22 episode= 30 delay=  9.75s
+DRSQ seed=22 episode= 40 delay=  8.96s
+DRSQ seed=22 episode= 50 delay=  9.05s
+DRSQ seed=33 episode= 10 delay=  9.56s
+DRSQ seed=33 episode= 20 delay=  9.65s
+DRSQ seed=33 episode= 30 delay= 10.09s
+DRSQ seed=33 episode= 40 delay=  9.37s
+DRSQ seed=33 episode= 50 delay=  9.10s
+DRHQ seed=11 episode= 10 delay= 13.14s
+DRHQ seed=11 episode= 20 delay= 10.84s
+DRHQ seed=11 episode= 30 delay=  9.02s
+DRHQ seed=11 episode= 40 delay= 10.24s
+DRHQ seed=11 episode= 50 delay=  7.64s
+DRHQ seed=22 episode= 10 delay= 11.37s
+DRHQ seed=22 episode= 20 delay=  9.36s
+DRHQ seed=22 episode= 30 delay=  9.93s
+DRHQ seed=22 episode= 40 delay=  8.74s
+DRHQ seed=22 episode= 50 delay=  8.52s
+DRHQ seed=33 episode= 10 delay=  9.64s
+DRHQ seed=33 episode= 20 delay= 10.61s
+DRHQ seed=33 episode= 30 delay= 10.09s
+DRHQ seed=33 episode= 40 delay=  9.35s
+DRHQ seed=33 episode= 50 delay=  9.01s
+
+Frozen evaluation (seconds of in-horizon queue delay per arrival):
+scenario   algorithm  delay_s  improvement_pct  paired_ci_low_pct  paired_ci_high_pct  demand_runs
+balanced       Fixed    13.92           -19.09             -24.03              -14.38           10
+balanced    Actuated    11.69             0.00               0.00                0.00           10
+balanced QueueGreedy    10.63             9.06               4.66               13.45           10
+balanced         DQN    10.19            12.85              10.12               15.79           10
+balanced         DRQ   286.02         -2346.99           -2453.60            -2236.54           10
+balanced        DRSQ     9.88            15.49              12.53               18.36           10
+balanced        DRHQ     9.80            16.19              14.00               18.49           10
+   tidal       Fixed    49.70          -364.68            -402.26             -329.85           10
+   tidal    Actuated    10.70             0.00               0.00                0.00           10
+   tidal QueueGreedy     9.33            12.80               9.09               16.26           10
+   tidal         DQN     8.84            17.31              13.25               20.83           10
+   tidal         DRQ   380.37         -3456.17           -3669.28            -3236.03           10
+   tidal        DRSQ     8.85            17.25              13.55               20.80           10
+   tidal        DRHQ     8.73            18.41              15.25               21.67           10
+Artifacts written to /content/drl_group87/results in 182.6s

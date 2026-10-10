@@ -1,0 +1,17 @@
+case,algorithm,delay_per_arrival_s,delay_vehicle_seconds,arrived,departed,pending,throughput_fraction,completed_mean_wait_s,completed_p95_wait_s,switches,conservation_ok
+empty,Fixed,0.0,0,0,0,0,0.0,0.0,0.0,6,True
+empty,Actuated,0.0,0,0,0,0,0.0,0.0,0.0,2,True
+empty,QueueGreedy,0.0,0,0,0,0,0.0,0.0,0.0,0,True
+empty,DRHQ,0.0,0,0,0,0,0.0,0.0,0.0,0,True
+one_sided_burst,Fixed,50.8,1524,30,30,0,1.0,50.8,93.55,6,True
+one_sided_burst,Actuated,27.5,825,30,30,0,1.0,27.5,40.55,3,True
+one_sided_burst,QueueGreedy,27.5,825,30,30,0,1.0,27.5,40.55,1,True
+one_sided_burst,DRHQ,17.5,525,30,30,0,1.0,17.5,30.549999999999997,2,True
+burst_reversal,Fixed,9.5,760,80,80,0,1.0,9.5,18.049999999999997,6,True
+burst_reversal,Actuated,9.5,760,80,80,0,1.0,9.5,18.049999999999997,2,True
+burst_reversal,QueueGreedy,16.0,1280,80,80,0,1.0,16.0,30.049999999999997,1,True
+burst_reversal,DRHQ,11.0,880,80,80,0,1.0,11.0,20.049999999999997,2,True
+overloaded,Fixed,77.49,123984,1600,364,1236,0.2275,76.32967032967034,145.0,6,True
+overloaded,Actuated,76.155,121848,1600,388,1212,0.2425,73.5360824742268,131.64999999999998,2,True
+overloaded,QueueGreedy,79.0875,126540,1600,340,1260,0.2125,78.48235294117647,147.0,10,True
+overloaded,DRHQ,76.5675,122508,1600,388,1212,0.2425,73.43298969072166,126.64999999999998,2,True

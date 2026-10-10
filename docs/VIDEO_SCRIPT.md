@@ -1,6 +1,6 @@
 # Group 87 — seven-minute presentation script
 
-Target rehearsal length: **6:30**. The script has about 770 words, leaving time to change slides and point at evidence. The hard limit is seven minutes. Record a rehearsal and adjust the pacing before recording the final video.
+Target rehearsal length: **6:30**. The script has about 761 words, leaving time to change slides and point at evidence. The hard limit is seven minutes. Record a rehearsal and adjust the pacing before recording the final video.
 
 Budhdi covers slides 1–11. Sumeet covers 12–20 and 22. Both speak on slide 21. This assigns presentation sections, not historical project contributions. Fill the contribution statements only after doing and verifying the work.
 
@@ -45,7 +45,7 @@ The state describes traffic and current signals. An action selects a valid phase
 
 ## Slide 4 — Phases, Conflicts & Clearance Intervals
 
-Compatible movements can share green. Switching may require full, partial or permissive clearance. The simulator enforces the interval, while the score includes a factor for its cost. Learning cannot bypass the conflict rules.
+The environment enforces yellow and all-red clearance. The flags also let G account for switching cost. A learned score cannot bypass the transition rules.
 
 ## Slide 5 — What Makes the Policy Regulatable
 
@@ -53,7 +53,7 @@ Each action has a precedence score. The largest score wins. At a fixed checkpoin
 
 ## Slide 6 — Precedence Score and Monotonicity
 
-The paper combines powered traffic terms with clearance. Our adaptation puts weights outside powers and keeps powers between one and two. With nonnegative inputs and positive clearance, the derivative sign follows the weight. Our actor has 56 parameters, versus 352 in the paper.
+Equation 1 is the paper function. Our adaptation puts signed weights outside powers. Input normalization is fixed; positive clearance factors are learned. At a saved checkpoint the derivative sign follows the weight.
 
 ## Slide 7 — A Worked Precedence Decision
 
@@ -65,7 +65,7 @@ G acts from the start, apart from exploration. A DQN teacher learns off-policy f
 
 ## Slide 9 — One Training Update
 
-Replay supplies a minibatch. Q learns reward plus the discounted target-network value. Terminal transitions use reward alone. The arithmetic example gives minus 2.30, or minus 0.40 at termination. DRHQ trains G toward the teacher’s best action using cross-entropy. The optimizers are separate.
+Our reward is minus added queue waiting divided by 100. Forty vehicle-seconds gives minus 0.40. With gamma 0.95 and next value minus 2, the target is minus 2.30, or minus 0.40 at termination. The scaling affects learning, while displayed delay remains seconds per arrival. DRHQ teaches G the winner from Q.
 
 ## Slide 10 — DRQ vs DRSQ vs DRHQ
 
@@ -85,7 +85,7 @@ The paper reports up to 19.4 percent lower delay for DRHQ against actuated contr
 
 ## Slide 14 — Our Local Experiment
 
-Four FIFO queues share two through groups. Three training seeds produce 600 episodes. Frozen evaluation uses 300 rollouts on held-out arrival streams shared between controllers. The metric is waiting inside the horizon per arrival. Unfinished vehicles contribute their existing wait, with future waiting excluded.
+This is an algorithm demonstration, not a SUMO reproduction. Four FIFO queues share two through groups. Three seeds produce 600 training episodes. Freeze the models and evaluate identical held-out arrivals in 300 rollouts. Waiting inside the horizon includes unfinished vehicles, but not their future waiting.
 
 ## Slide 15 — Limitations and Future Work
 
@@ -101,15 +101,15 @@ Training curves average three seeds and come from saved CSVs. Exploration change
 
 ## Slide 18 — Example 1: Balanced Demand
 
-Balanced demand gives 11.688 seconds for Actuated and 9.828 for DRHQ in the reference run, a 15.92 percent reduction. Its paired interval is 13.60 to 18.42 percent. This reflects held-out demand variation, conditional on the trained models. The Colab screenshot verifies the result.
+The balanced reference means are 11.688 seconds for Actuated and 9.828 for DRHQ. Subtract and divide by Actuated to get 15.92 percent. Pending vehicles and throughput are displayed too. The interval covers held-out demand variation conditional on three trained models. Cite the balanced rows in summary.csv.
 
 ## Slide 19 — Example 2: Demand Reversal
 
-At 600 seconds the dominant axis reverses. This trace shows the executed queues for a fixed demonstration seed. Reference DRHQ delay is 8.758 seconds against 10.696 for Actuated, an 18.12 percent reduction. We also inspect pending queues and throughput, retaining the failed DRQ outcome.
+Demand reverses at 600 seconds. The displayed delay, pending queues and throughput summarize frozen evaluation. DRHQ has 18.12 percent lower delay in this reference run. Its interval measures demand variation conditional on the trained models. DRQ fails badly and remains in the notebook.
 
 ## Slide 20 — Decision and Monotonicity Proof
 
-At 300 seconds the balanced example selects North/South. At 900 seconds tidal selects East/West. Feature contributions sum to each score. The largest score wins. Three DRHQ checkpoints pass 7,200 derivative-sign checks, conditional on a fixed clearance category. That supports inspection without proving road safety.
+Show the implemented Section 11 decision cell. The balanced North/South contributions sum to about 9.035, above East/West at 3.780, so North/South wins. The tidal example selects East/West. Full-precision terms reconstruct scores. The derivative checks concern fixed checkpoints and clearance categories, not road safety.
 
 ## Slide 21 — Individual Proof of Work
 

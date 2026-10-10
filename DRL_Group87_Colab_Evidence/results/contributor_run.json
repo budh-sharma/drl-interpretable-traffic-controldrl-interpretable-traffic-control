@@ -1,0 +1,25 @@
+{
+  "contributor_name": "",
+  "actual_contribution": "",
+  "status": "pending personal details",
+  "utc_time": "2026-10-10T16:40:16.303533+00:00",
+  "python": "3.13.16",
+  "numpy": "2.1.3",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "checks": {
+    "training_episodes": 600,
+    "frozen_evaluation_rollouts": 300,
+    "diagnostic_rollouts": 16,
+    "conservation_all_rollouts": true,
+    "diagnostic_parameters_unchanged": true,
+    "tests_reported_ok": true,
+    "metric": "waiting inside horizon / all arrivals, seconds",
+    "scope": "Synthetic queue simulator; algorithm demonstration, not SUMO replication"
+  },
+  "result_hashes": {
+    "training.csv": "b6dba2d5e4f53d50921d4d8ffcf39dc02011c2740324bb768ca21691b64b73e4",
+    "evaluation.csv": "c611e9d170f1f4d0eeb4fdc4993dae423c445425503f7f7afe4dc410ec809283",
+    "summary.csv": "71b6f07fa78720a70bbe8432e998eae276db58613ccd36cd67b03de78ea749ca",
+    "examples.json": "72c20546508f94fc8126e9e37e7f6e5572f8937789ce03324d8722b95cfdeeea"
+  }
+}

@@ -2,7 +2,7 @@
 
 The revised deck has **22 slides**. Slides 1–15 explain and analyze the paper, including the score, a worked example and the training update. Slides 16–22 show the implementation, measurements, personal evidence and references.
 
-Ten original slide visuals remain unchanged: original slides 1, 2, 4, 5, 6, 8, 9, 10, 11 and 14. The worked-example error is corrected in a new slide. The unverified redrawn results curves are replaced with the paper's verifiable findings. Local charts read measured CSVs rather than typed performance claims.
+The original design and important paper-review slides are retained. Concise source labels and the clearance explanation were updated during the final review. The worked-example error is corrected in a new slide. The unverified redrawn results curves are replaced with the paper's verifiable findings. Local charts read measured CSVs rather than typed performance claims.
 
 ## Run and capture
 
@@ -19,6 +19,8 @@ Open `DRL_Group87_Colab.ipynb` in Google Colab and select a CPU runtime. Run all
 | 22 | Editable link fields, no screenshot required | Real shared code/notebook and Google Drive video links |
 
 Use two captures inside a proof space when necessary. Crop tightly around useful output. Delete the green screenshot label and gray instructions after inserting your image. Keep its proportions. Do not compress a large notebook page into an unreadable tiny image. Expand or split outputs instead.
+
+Slides 18–19 now include mean pending vehicles and throughput from evaluation.csv alongside delay. Slide 18 shows the percentage calculation. The interval covers held-out demand variation conditional on the trained models. Slide 20 shows a score reconstruction; demonstrate notebook Section 11 during recording.
 
 The charts and tables are editable. Compare your actual values with `results/ppt_values.json`. For a chart, use PowerPoint's Edit Data command to replace the embedded values if necessary. Keep the stated source/run identity accurate. Figure 2 arithmetic and the small TD/loss example are illustrations, separate from the measured traffic results.
 
