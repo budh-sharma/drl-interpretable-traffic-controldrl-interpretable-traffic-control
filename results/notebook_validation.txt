@@ -1,0 +1,4 @@
+PASS: 19 code cells executed from a clean local working directory.
+Full experiment rerun, examples, animation and ZIP export completed.
+Numerical summary matches the packaged reference experiment.
+This was a local CPU execution with writefile-cell handling, not a live Google Colab session.

@@ -1,0 +1,14 @@
+       queued  approaching  total_wait  mean_wait  queue_per_lane  speed
+North     0.0          0.0         0.0      0.000             0.0    0.0
+South     3.0          0.0        29.0      9.667             3.0    0.0
+East      5.0          0.0        47.0      9.400             5.0    0.0
+West     10.0          1.0        73.0      7.300            10.0   12.0
+
+Score terms:
+                queued  approaching  total_wait  ...  queue_per_lane   speed    score
+North / South  0.5952       0.0000      0.0404  ...          0.5952  0.0000   1.3496
+East / West    5.3972       0.6455      0.4191  ...          5.3972  0.5263  12.5728
+
+[2 rows x 7 columns]
+
+Chosen: East / West

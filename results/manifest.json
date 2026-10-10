@@ -1,0 +1,74 @@
+{
+  "scope": "Synthetic queue simulator; algorithm demonstration, not SUMO replication",
+  "settings": {
+    "horizon": 1200,
+    "decision_seconds": 10,
+    "yellow_seconds": 2,
+    "all_red_seconds": 1,
+    "service_per_second": 1,
+    "episodes": 50,
+    "batch_size": 32,
+    "replay_capacity": 12000,
+    "target_interval": 100,
+    "warmup": 128,
+    "gamma": 0.95,
+    "learning_rate": 0.001,
+    "policy_learning_rate": 0.003,
+    "epsilon_start": 0.3,
+    "epsilon_end": 0.03,
+    "policy_updates": 2,
+    "hidden": 32
+  },
+  "training_seeds": [
+    11,
+    22,
+    33
+  ],
+  "evaluation_seeds": [
+    90000,
+    90001,
+    90002,
+    90003,
+    90004,
+    90005,
+    90006,
+    90007,
+    90008,
+    90009
+  ],
+  "algorithms": [
+    "DQN",
+    "DRQ",
+    "DRSQ",
+    "DRHQ"
+  ],
+  "baseline_names": [
+    "Fixed",
+    "Actuated",
+    "QueueGreedy"
+  ],
+  "demonstration_seed": 11,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "elapsed_seconds": 73.83762518299955,
+  "training_episodes_total": 600,
+  "evaluation_rollouts": 300,
+  "bootstrap_unit": "held-out demand stream after averaging training seeds",
+  "files_sha256": {
+    "training.csv": "b7d3dfa02b29dd7c80e55211b6d7b415563167cf3afed3ddbbde811edc42470b",
+    "evaluation.csv": "7a85bb7f44d5356fd2d45350ce529bac43ed4ba1d4ec680b804c07d2f48d8a81",
+    "summary.csv": "d2b7732cecdcd2774504af173442aab3cf460c3dc8bebdaab9bcc04dbae7ed4a",
+    "examples.json": "47222c52d77cf1f0f7a9a85008d23fd882a62f32bcfacdf8c23c9414afbbd32d"
+  },
+  "source_sha256": {
+    "traffic_control/__init__.py": "33882e4a27ce2752a5bf84c2ab5a21905a3293568fc2be9762af40c33299488d",
+    "traffic_control/config.py": "4dc397627e2e2ca079dbb5386d21b5aca57324ef87ff0c7ab626b7ebc8c9df24",
+    "traffic_control/environment.py": "0b64cf638ff23ea0d614565213a4bc6e51ae3cc3043cb2abd56b1a9527abe32d",
+    "traffic_control/evaluation.py": "cd31b26772ad634eb320ee3065025c1e068dd2aa3d5de7cfb2444a2ff5b07257",
+    "traffic_control/networks.py": "f29cbad40aaa0cfc1fa02f4bc2a33f9c79556787be18d312ee1a82803ca4ae54",
+    "traffic_control/proof.py": "4f59ab30a1d8d004fbe8829e6236200f5ec63a55e5ffa014f6b858511158c162",
+    "traffic_control/training.py": "455db2f48bf858989c9606361a3bee28ff9239b9b664335d5049f6d2e48503eb",
+    "traffic_control/visuals.py": "ed971b069765d36c8218339aec02355f7baff408bf5091c56bfa79a4bfa24933"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "training_episodes": 600,
+  "frozen_evaluation_rollouts": 300,
+  "diagnostic_rollouts": 16,
+  "conservation_all_rollouts": true,
+  "diagnostic_parameters_unchanged": true,
+  "tests_reported_ok": true,
+  "metric": "waiting inside horizon / all arrivals, seconds",
+  "scope": "Synthetic queue simulator; algorithm demonstration, not SUMO replication"
+}

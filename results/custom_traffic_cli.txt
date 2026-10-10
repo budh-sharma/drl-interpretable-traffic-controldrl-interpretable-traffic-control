@@ -1,0 +1,6 @@
+Synthetic constant profile (N/S/E/W vehicles per second): [0.3, 0.3, 0.3, 0.3]
+ controller  delay_per_arrival_s  delay_vehicle_seconds  arrived  departed  pending  throughput_fraction  completed_mean_wait_s  completed_p95_wait_s  switches  conservation_ok
+      Fixed               13.202                  19236     1457      1441       16                0.989                 13.201                  32.0        39             True
+   Actuated               12.111                  17646     1457      1444       13                0.991                 12.150                  31.0        51             True
+QueueGreedy               10.158                  14800     1457      1446       11                0.992                 10.187                  22.0       108             True
+       DRHQ                8.983                  13088     1457      1446       11                0.992                  9.003                  22.0        86             True

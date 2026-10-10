@@ -1,0 +1,17 @@
+{
+  "11": {
+    "checked_derivatives": 2400,
+    "sign_violations": 0,
+    "finite": true
+  },
+  "22": {
+    "checked_derivatives": 2400,
+    "sign_violations": 0,
+    "finite": true
+  },
+  "33": {
+    "checked_derivatives": 2400,
+    "sign_violations": 0,
+    "finite": true
+  }
+}
